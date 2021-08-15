@@ -1,0 +1,122 @@
+body{
+    margin: 0px;
+    overflow-x: hidden; 
+}
+
+h1{
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#highlight{
+    width: 100%;
+    height: 500px;
+    background-color: #004B5B;
+}
+
+#img{
+    position: relative;
+    float: right;
+    bottom: 130px;
+    right: 40px;
+}
+
+#text{
+    color: white;
+    width: fit-content;
+    margin-left: 80px;
+    margin-top: 150px;
+    font-size: 80px;
+}
+
+#des{
+    color: white;
+    display: block;
+}
+
+#input{
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    margin-left: 80px;
+}
+
+.userInfo{
+    height: 40px;
+}
+
+#add{
+    margin-left: 250px;
+    font-size: 40px;
+    background-color: #019389c5;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px;
+}
+
+#add:hover{
+    color: white;
+    box-shadow: 2px 2px black;
+    background-color: #019389;
+}
+
+#add:active{
+    transform: translateY(5px);
+    box-shadow: 0px 0px black;
+}
+
+#adding{
+    display: inline-block;
+}
+
+#center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#temp{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    transform: translateX(10%);
+}
+
+#line{
+    border: 1px solid;
+}
+
+#photoContent{
+    height: 300px;
+    width: 400px;
+    margin: 25px 50px 0px 50px;
+    display: inline-block;
+}
+
+#nameContent{
+    display: inline;
+    font-size: 80px;
+}
+
+#desContent{
+    display: inline;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:1600px){
+    #img{
+        display: none;
+    }
+}
+@media screen and (max-width:1300px){
+    #input{
+        display: block;
+    }
+
+    #highlight{
+        height: fit-content;
+    }
+
+}
