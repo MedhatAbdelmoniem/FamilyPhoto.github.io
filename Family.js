@@ -9,16 +9,12 @@ document.getElementById('add').addEventListener('click',()=>{
         alert('Please enter all data')
     }else{
         document.getElementById('temp').style.display = "none"
-        var reader = new FileReader()
         var pName =  document.createElement('p')
         var newName = document.createTextNode(nam.value)
         var pDes = document.createElement('p')
         var newDes = document.createTextNode(des.value)
         var newPhoto = document.createElement("img");
-        reader.readAsDataURL(photo.files[0])
-        reader.addEventListener('load',()=>{
-        newPhoto.src = reader.result
-        })
+        newPhoto.src = photo.value
         pName.appendChild(newName)
         pName.id = "nameContent"
         pDes.appendChild(newDes)
